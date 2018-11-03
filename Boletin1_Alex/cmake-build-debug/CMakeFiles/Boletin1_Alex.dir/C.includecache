@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin1_Alex/hashing.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+hashing.h
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin1_Alex/hashing.h
+
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin1_Alex/hashing.h
+
