@@ -7,22 +7,19 @@
 #define TAM2 512 //Necesario para asegurar el recorrido completo
 
 int main() {
-    int opcion = 0;
-
 
     actores actor[TAM];
     actores actor2[TAM2];
-    init(actor, TAM);
+
+    init(actor, TAM);//Iniciarmos el array vacio
     init(actor2, TAM2);
     char *nombre;
     char *apellidos;
     int posicion=0;
+    int opcion = 0;
 
     nombre=malloc(150* sizeof(char));
     apellidos=malloc(150* sizeof(char));
-    // eliminar(actor, 10, TAM);
-    // int pos= buscar(actor,11,TAM);
-    //printf("El valor 11 esta en la pos %d de la tabla\n",pos);
 
     do {
 
@@ -51,7 +48,6 @@ int main() {
             case 2:
 
                 iniciar_dependiente_clave(actor2, TAM2);
-                show(actor2, TAM2);
                 system("PAUSE");
                 system("cls");
                 break;

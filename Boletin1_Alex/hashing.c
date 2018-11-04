@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "hashing.h"
+#include <windows.h>
 
 void init(actores actor[], int tam) {
 
@@ -29,7 +30,6 @@ int H(int id, int intentos, int tam) {
 //H(k)=k mod n
 //G(k,i)=(H(k)+i)mod n ->i numero de intentos
 
-
     return ((id + intentos) % tam);
 
 }
@@ -52,9 +52,13 @@ if( valor % 2 == 0){        //Asi obtenemos que el numero sea impar para asegura
 
 
 void iniciar(actores actor[], int tam) {
-
+    LARGE_INTEGER frequency;
+    LARGE_INTEGER start;
+    LARGE_INTEGER end;
+    double interval;
     char linea[tam]; // Para guardar la linea de cada fichero
     char *token;
+    int colisiones_totales=0;
     actores actoractual;
 
     //Abrimos el fichero
@@ -66,6 +70,8 @@ void iniciar(actores actor[], int tam) {
     }
 
     // Recorremos cada linea del fichero
+    QueryPerformanceFrequency(&frequency);
+    QueryPerformanceCounter(&start);
     while (fgets(linea, 500, fp) != NULL) {
         actoractual.nombre = malloc(150 * sizeof(char));
         actoractual.apellidos = malloc(150 * sizeof(char));
@@ -103,7 +109,6 @@ void iniciar(actores actor[], int tam) {
 
             }
 
-            // printf("%s\n",token);
             token = strtok(NULL, ";");
 
             i++;
@@ -127,15 +132,16 @@ void iniciar(actores actor[], int tam) {
 
                 break;
 
-            } else {
-
-              //  printf("\tColision Numero:%d\n",intentos+1);
-
-
             }
+            colisiones_totales++;
         }
 
     }
+    QueryPerformanceCounter(&end);
+    interval = (double) (end.QuadPart - start.QuadPart) / frequency.QuadPart;
+
+    printf("TIEMPO TRANSCURRIDO: %f\n", interval);
+    printf("COLISIONES TOTALES: %d\n",colisiones_totales);
 
 }
 void iniciar_dependiente_clave(actores actor[], int tam) {
@@ -143,6 +149,11 @@ void iniciar_dependiente_clave(actores actor[], int tam) {
     char linea[500]; // Para guardar la linea de cada fichero
     char *token;
     actores actoractual;
+    LARGE_INTEGER frequency;
+    LARGE_INTEGER start;
+    LARGE_INTEGER end;
+    double interval;
+    int colisiones_totales=0;
 
     //Abrimos el fichero
     FILE *fp = fopen("listaActores.csv", "r");
@@ -153,6 +164,9 @@ void iniciar_dependiente_clave(actores actor[], int tam) {
     }
 
     // Recorremos cada linea del fichero
+
+    QueryPerformanceFrequency(&frequency);
+    QueryPerformanceCounter(&start);
     while (fgets(linea, 500, fp) != NULL) {
         actoractual.nombre = malloc(150 * sizeof(char));
         actoractual.apellidos = malloc(150 * sizeof(char));
@@ -190,7 +204,6 @@ void iniciar_dependiente_clave(actores actor[], int tam) {
 
             }
 
-            // printf("%s\n",token);
             token = strtok(NULL, ";");
 
             i++;
@@ -214,15 +227,17 @@ void iniciar_dependiente_clave(actores actor[], int tam) {
 
                 break;
 
-            } else {
-
-                //  printf("\tColision Numero:%d\n",intentos+1);
-
-
             }
+            colisiones_totales++;
         }
 
     }
+    QueryPerformanceCounter(&end);
+    interval = (double) (end.QuadPart - start.QuadPart) / frequency.QuadPart;
+
+    printf("TIEMPO TRANSCURRIDO: %f\n", interval);
+    printf("COLISIONES TOTALES: %d\n", colisiones_totales);
+
 
 }
 
