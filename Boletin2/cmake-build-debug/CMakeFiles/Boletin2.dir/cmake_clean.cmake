@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Boletin2.dir/main.c.obj"
+  "CMakeFiles/Boletin2.dir/grafos.c.obj"
   "Boletin2.pdb"
   "Boletin2.exe"
   "Boletin2.exe.manifest"

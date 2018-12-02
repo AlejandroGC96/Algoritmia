@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-D:/GitKraken/Algoritmia/Boletin2/main.c
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/grafos.c
+grafos.h
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/grafos.h
+stdlib.h
+-
 stdio.h
 -
+string.h
+-
+
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/grafos.h
 
