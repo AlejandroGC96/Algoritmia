@@ -1,3 +1,3 @@
-D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/Boletin2.dir
-D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/Boletin2.dir
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

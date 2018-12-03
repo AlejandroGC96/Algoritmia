@@ -41,7 +41,7 @@ void leer_casting(actores actor[], int tam) {
     }
 
     // Recorremos cada linea del fichero
-    while (fgets(linea, 10, fp) != NULL) {
+    while (fgets(linea, 500, fp) != NULL) {
         actoractual.nombre = malloc(150 * sizeof(char));
         actoractual.apellidos = malloc(150 * sizeof(char));
         // printf("Linea leida: %s\n", linea);
