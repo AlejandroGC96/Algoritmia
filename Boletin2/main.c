@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include "grafos.h"
+#include "casting.h"
 
 int main() {
 
     int opcion=0;
+    actores actor[10];
+
 
     do {
         printf("####Backtracking####\n");
@@ -19,6 +22,8 @@ int main() {
                 iniciar();
                 break;
             case 2:
+                init(actor, 10);
+                leer_casting(actor, 10);
                 break;
             case 3:
                 break;

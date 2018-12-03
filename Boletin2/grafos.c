@@ -49,11 +49,11 @@ int GrafoRec(int *solucion, int etapa, int tamano_grafo, int tamano_colores, int
 
     int valor_actual = 0; // valor_actual = 0, primer color seleccionable
 
-    do {
+    for(valor_actual ; valor_actual<=tamano_colores; valor_actual++){
 
         solucion[etapa]=valor_actual;
 
-        if ((alcanzable(&solucion[tamano_grafo], etapa,tamano_grafo ,grafo))==1){
+            if ((alcanzable(&solucion[tamano_grafo], etapa,tamano_grafo ,grafo))==1){
             if(etapa==tamano_grafo-1){
                 printf("Solucion: ");
                 procesarSolucion(&solucion[tamano_grafo],etapa);
@@ -66,8 +66,7 @@ int GrafoRec(int *solucion, int etapa, int tamano_grafo, int tamano_colores, int
 
         }
 
-        valor_actual++;
-    }while((solucion[etapa] == tamano_colores) || exito == 1);
+    }
 
     solucion[etapa]= -1;
     return  exito;
@@ -87,8 +86,8 @@ void iniciar(){
 
 
     nombre_fichero = (char*)malloc( 50 * sizeof(char) );
-//    printf("Elige el fichero que indique el tamaño de los nodos que va a tener tu grafo(2-5):\n");
-  //  gets(nombre_fichero);
+    //    printf("Elige el fichero que indique el tamaño de los nodos que va a tener tu grafo(2-5):\n");
+    //  gets(nombre_fichero);
 
     FILE *fp;
     fp = fopen("GrafoPrueba.txt", "r"); // read mode
@@ -133,9 +132,14 @@ void iniciar(){
 
 
     fflush(stdin);
-    printf("Elige la cantidad de colores que quieres(2-5:\n");
+    printf("Elige la cantidad de colores que quieres(2-5):\n");
     scanf("%d", &tamano_colores);
     fflush(stdin);
+
+    // Inciamos el array de soluciones a -1
+    for(int i=0;i<tamano_grafo;i++){
+        solucion[i]=-1;
+    }
 
 
     GrafoRec(&solucion[tamano_grafo], etapa, tamano_grafo, tamano_colores,  grafo);

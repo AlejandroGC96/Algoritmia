@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2018.2.6\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\CLion 2018.2.6\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\alex_\Documents\Gitkraken\Algoritmia\Boletin2
+CMAKE_SOURCE_DIR = D:\GitKraken\Algoritmia\Boletin2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\alex_\Documents\Gitkraken\Algoritmia\Boletin2\cmake-build-debug
+CMAKE_BINARY_DIR = D:\GitKraken\Algoritmia\Boletin2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\alex_\Documents\Gitkraken\Algoritmia\Boletin2\cmake-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\CLion 2018.2.6\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\CLion 2018.2.6\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alex_\Documents\Gitkraken\Algoritmia\Boletin2\cmake-build-debug\CMakeFiles C:\Users\alex_\Documents\Gitkraken\Algoritmia\Boletin2\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\GitKraken\Algoritmia\Boletin2\cmake-build-debug\CMakeFiles D:\GitKraken\Algoritmia\Boletin2\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alex_\Documents\Gitkraken\Algoritmia\Boletin2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\GitKraken\Algoritmia\Boletin2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -121,6 +121,33 @@ Boletin2: cmake_check_build_system
 Boletin2/fast:
 	$(MAKE) -f CMakeFiles\Boletin2.dir\build.make CMakeFiles/Boletin2.dir/build
 .PHONY : Boletin2/fast
+
+casting.obj: casting.c.obj
+
+.PHONY : casting.obj
+
+# target to build an object file
+casting.c.obj:
+	$(MAKE) -f CMakeFiles\Boletin2.dir\build.make CMakeFiles/Boletin2.dir/casting.c.obj
+.PHONY : casting.c.obj
+
+casting.i: casting.c.i
+
+.PHONY : casting.i
+
+# target to preprocess a source file
+casting.c.i:
+	$(MAKE) -f CMakeFiles\Boletin2.dir\build.make CMakeFiles/Boletin2.dir/casting.c.i
+.PHONY : casting.c.i
+
+casting.s: casting.c.s
+
+.PHONY : casting.s
+
+# target to generate assembly for a file
+casting.c.s:
+	$(MAKE) -f CMakeFiles\Boletin2.dir\build.make CMakeFiles/Boletin2.dir/casting.c.s
+.PHONY : casting.c.s
 
 grafos.obj: grafos.c.obj
 
@@ -185,6 +212,9 @@ help:
 	@echo ... Boletin2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... casting.obj
+	@echo ... casting.i
+	@echo ... casting.s
 	@echo ... grafos.obj
 	@echo ... grafos.i
 	@echo ... grafos.s
