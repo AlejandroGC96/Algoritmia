@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/casting.c" "C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/Boletin2.dir/casting.c.obj"
-  "C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/grafos.c" "C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/Boletin2.dir/grafos.c.obj"
-  "C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/main.c" "C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/Boletin2.dir/main.c.obj"
+  "D:/GitKraken/Algoritmia/Boletin2/casting.c" "D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/Boletin2.dir/casting.c.obj"
+  "D:/GitKraken/Algoritmia/Boletin2/grafos.c" "D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/Boletin2.dir/grafos.c.obj"
+  "D:/GitKraken/Algoritmia/Boletin2/main.c" "D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/CMakeFiles/Boletin2.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

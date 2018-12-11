@@ -6,11 +6,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#define VERDE 0
-#define ROJO 1
-#define AZUL 2
-#define AMARILLO 3
-#define  NEGRO 4
 
 int alcanzable(int *solucion, int etapa,int tamano_grafo, int grafo[tamano_grafo][tamano_grafo]) {
 
@@ -21,7 +16,7 @@ int alcanzable(int *solucion, int etapa,int tamano_grafo, int grafo[tamano_grafo
 
             if(solucion[etapa] == solucion[i]){
 
-                return 0;
+                return 0;//Adyacentes con el mismo color
             }
 
         }
@@ -35,10 +30,37 @@ int alcanzable(int *solucion, int etapa,int tamano_grafo, int grafo[tamano_grafo
 
 void procesarSolucion(int solucion[],int etapa){
 
-    for(int i=0; i<etapa; i++){
+    for(int i=0; i<=etapa; i++){
         printf(" %d ",solucion[i]);
 
     }
+    printf(" QUIETO PARAO\n");
+    system("PAUSE");
+}
+
+void traducir_solucion(int solucion[], int etapa){
+
+char color[250];
+
+    for(int i=0; i<=etapa; i++){
+        if(solucion[i]==0)
+            strcpy(color,"Verde");
+        if(solucion[i]==1)
+            strcpy(color,"Rojo");
+        if(solucion[i]==2)
+            strcpy(color,"Azul");
+        if(solucion[i]==3)
+            strcpy(color,"Amarrillo");
+        if(solucion[i]==4)
+            strcpy(color, "Negro");
+
+
+
+        printf(" El nodo %d  tiene el color %s \n",i,color);
+
+    }
+
+
 
 }
 
@@ -49,19 +71,21 @@ int GrafoRec(int *solucion, int etapa, int tamano_grafo, int tamano_colores, int
 
     int valor_actual = 0; // valor_actual = 0, primer color seleccionable
 
-    for(valor_actual ; valor_actual<=tamano_colores; valor_actual++){
-
+    for(valor_actual ; valor_actual<tamano_colores; valor_actual++){
+        if(exito == 1) return 1;//Comentar si se quiere saber todas los resultados posibles
         solucion[etapa]=valor_actual;
 
-            if ((alcanzable(&solucion[tamano_grafo], etapa,tamano_grafo ,grafo))==1){
+            if ((alcanzable(solucion, etapa,tamano_grafo ,grafo))==1){
             if(etapa==tamano_grafo-1){
-                printf("Solucion: ");
-                procesarSolucion(&solucion[tamano_grafo],etapa);
+                //printf("Solucion: ");
+                procesarSolucion(solucion,etapa);
+                traducir_solucion(solucion,etapa);
+
                 exito=1;
                 return exito;
             }else{
 
-               exito = GrafoRec(&solucion[tamano_grafo], etapa+1, tamano_grafo, tamano_colores, grafo);
+               exito = GrafoRec(solucion, etapa+1, tamano_grafo, tamano_colores, grafo);
             }
 
         }
@@ -86,11 +110,11 @@ void iniciar(){
 
 
     nombre_fichero = (char*)malloc( 50 * sizeof(char) );
-    //    printf("Elige el fichero que indique el tamaño de los nodos que va a tener tu grafo(2-5):\n");
-    //  gets(nombre_fichero);
+    printf("Elige el fichero que indique el tamaño de los nodos que va a tener tu grafo(2-5):\n");
+    gets(nombre_fichero);
 
     FILE *fp;
-    fp = fopen("GrafoPrueba.txt", "r"); // read mode
+    fp = fopen(nombre_fichero, "r"); // read mode
 
     if (fp == NULL)
     {
@@ -142,10 +166,7 @@ void iniciar(){
     }
 
 
-    GrafoRec(&solucion[tamano_grafo], etapa, tamano_grafo, tamano_colores,  grafo);
-
-
-
+    GrafoRec(solucion, etapa, tamano_grafo, tamano_colores,  grafo);
 
 }
 

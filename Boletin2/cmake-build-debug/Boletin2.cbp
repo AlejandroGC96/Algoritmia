@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug"/>
+				<Option working_dir="D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Boletin2">
-				<Option output="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Boletin2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug"/>
+				<Option output="D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Boletin2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -29,15 +29,15 @@
 					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Boletin2"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Boletin2"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Boletin2/fast">
-				<Option output="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Boletin2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug"/>
+				<Option output="D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Boletin2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -47,49 +47,49 @@
 					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Boletin2/fast"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Boletin2/fast"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug"/>
+				<Option working_dir="D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug"/>
+				<Option working_dir="D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;D:/GitKraken/Algoritmia/Boletin2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/casting.c">
+		<Unit filename="D:/GitKraken/Algoritmia/Boletin2/casting.c">
 			<Option target="Boletin2"/>
 		</Unit>
-		<Unit filename="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/casting.h">
+		<Unit filename="D:/GitKraken/Algoritmia/Boletin2/casting.h">
 			<Option target="Boletin2"/>
 		</Unit>
-		<Unit filename="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/grafos.c">
+		<Unit filename="D:/GitKraken/Algoritmia/Boletin2/grafos.c">
 			<Option target="Boletin2"/>
 		</Unit>
-		<Unit filename="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/grafos.h">
+		<Unit filename="D:/GitKraken/Algoritmia/Boletin2/grafos.h">
 			<Option target="Boletin2"/>
 		</Unit>
-		<Unit filename="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/main.c">
+		<Unit filename="D:/GitKraken/Algoritmia/Boletin2/main.c">
 			<Option target="Boletin2"/>
 		</Unit>
-		<Unit filename="C:/Users/alex_/Documents/Gitkraken/Algoritmia/Boletin2/CMakeLists.txt">
+		<Unit filename="D:/GitKraken/Algoritmia/Boletin2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
